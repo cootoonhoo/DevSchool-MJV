@@ -1,0 +1,41 @@
+h1{
+  font-size: 40px;
+}
+
+h2{
+  font-size: 35px;
+}
+
+div{
+  font-size: 22px;
+}
+
+.container{
+  margin: 50px 0px;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-top: 30px;
+  div{
+      width: 30%;
+
+      display: flex;
+      flex-direction: column;
+
+      margin: 0px 30px;
+
+      h2{
+        align-self: center;
+      }
+
+      p{
+        flex-wrap: wrap-reverse;
+      }
+  }
+}
+
