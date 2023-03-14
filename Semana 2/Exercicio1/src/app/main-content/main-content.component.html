@@ -1,0 +1,9 @@
+<div class="Catalogue flex" id="Catalogue">
+  <div class="Movie" *ngFor="let movie of movies">
+    <div class="Card flex">
+      <img [src]="movie.imgLink">
+      <h2>{{ movie.title }}</h2>
+      <h3>({{ movie.year }})</h3>
+    </div>
+  </div>
+</div>

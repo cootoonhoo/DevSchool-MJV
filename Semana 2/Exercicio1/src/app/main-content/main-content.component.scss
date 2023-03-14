@@ -1,0 +1,30 @@
+
+
+.Catalogue{
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin: 40px;
+
+  .Card{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h3{
+      font-weight: 300;
+    }
+
+    img{
+      width: 300px;
+      height: 375px;
+
+      border: 4px black solid;
+    }
+
+  }
+}
+
+.flex{
+  display: flex;
+}
