@@ -1,0 +1,12 @@
+<app-header></app-header>
+<div class="MainContent">
+  <h1>{{ appTitle }}</h1>
+  <div class="Card" id="Worker">
+    <h3> {{ Funcionario.nome }}</h3>
+    <p> {{ Funcionario.id }}</p>
+    <p> R${{Funcionario.salario}},00</p>
+    <p> Cargo: {{ Funcionario.cargo}}</p>
+  </div>
+  <app-listagem></app-listagem>
+</div>
+<app-footer></app-footer>

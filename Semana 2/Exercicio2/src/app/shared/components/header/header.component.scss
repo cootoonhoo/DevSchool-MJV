@@ -1,0 +1,42 @@
+.Container{
+  width: 100vw;
+  height: 150px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 20px;
+
+  background-color:deeppink;
+  color: white;
+
+  h1{
+    cursor: default;
+  }
+
+  ul{
+    width: 20%;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    font-size: 18px;
+    list-style: none;
+
+    a{
+      text-decoration: none;
+      color: white;
+
+      transition: font-weight 100ms linear;
+      &:hover{
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+.flex{
+  display: flex;
+}

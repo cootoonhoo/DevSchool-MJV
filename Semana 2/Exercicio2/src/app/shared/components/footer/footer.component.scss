@@ -1,0 +1,15 @@
+.Container{
+  width: 100vw;
+  height: 150px;
+
+  background:  deepskyblue;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span{
+    font-weight: 800;
+    padding-left: 5px;
+  }
+}
