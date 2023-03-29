@@ -1,0 +1,20 @@
+<div class="Images">
+  <div *ngFor="let photo of photosArray">
+    <img [src]="photo.image">
+    <h3> {{ photo.title}}</h3>
+  </div>
+</div>
+
+<div class="text" id="About">
+  <p [ngClass]="{redBg: screenWidth}">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus rhoncus mattis. Praesent pulvinar elementum lorem eget bibendum. Donec et semper nisl. Etiam ultrices dolor eu nisl laoreet gravida. Curabitur ut dapibus quam. Nunc mattis, odio eu malesuada cursus, est leo pellentesque nisi, id finibus dolor augue non diam. Curabitur placerat viverra nunc.
+  </p>
+
+  <p [ngClass]="{blueBg: !screenWidth}">
+    In arcu felis, euismod nec est et, tincidunt suscipit urna. Suspendisse potenti. Etiam efficitur, magna quis luctus vestibulum, metus nisi  imperdiet tortor, non rutrum tellus ipsum condimentum turpis. Aliquam posuere, ipsum ac euismod porttitor, nisi lacus lobortis ligula, eu  sollicitudin tortor mi sit amet sem. Etiam tincidunt diam et libero ornare rutrum. Duis aliquet erat enim, pharetra rutrum eros volutpat eu.   Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin dapibus rutrum magna, quis aliquet felis laoreet  vitae. Mauris eget diam tristique, euismod nisl ac, elementum libero. Sed tempor vehicula nunc vel aliquet. Praesent et mauris in quam placerat  accumsan. Ut enim nunc, interdum convallis commodo sed, accumsan ut urna. Suspendisse rhoncus aliquet tortor.
+  </p>
+
+  <p>In efficitur tristique urna, gravida interdum turpis dignissim at. Maecenas ac ipsum tristique, suscipit nunc vel, lobortis eros. Nunc tempus bibendum augue cursus placerat. Maecenas semper, arcu vel consequat malesuada, leo nunc accumsan lorem, in iaculis risus ex eget massa. Maecenas eget lorem metus. Morbi tempus lacinia lacinia. Proin vestibulum arcu scelerisque tincidunt pretium. Duis efficitur nec orci quis consequat. Fusce ac lobortis tellus. Nullam sit amet lectus consectetur, sollicitudin nibh sed, semper est. Nulla sed turpis tempus, congue ante ac, gravida magna. Integer consectetur dui vitae congue faucibus. Nulla maximus, turpis eu venenatis condimentum, nisl ante laoreet ante, elementum gravida ipsum ex a lectus. Sed eget fringilla magna, non faucibus sapien.</p>
+</div>
+<button (click)="showHiddenText()">Mostrar Texto Escondido</button>
+<h1 *ngIf="easterEgg"> Eu sou easter um Egg!</h1>
