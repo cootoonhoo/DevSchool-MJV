@@ -8,5 +8,4 @@ export class BlueTextDirective {
   constructor(private element: ElementRef) {
     element.nativeElement.style.color = 'blue';
   }
-
 }
