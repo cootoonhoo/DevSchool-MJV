@@ -14,13 +14,14 @@ form {
 
   label{
     margin: 15px 0px 5px 0px;
-    font-size: 18px;
+    font-size: 24px;
   }
 
   input{
     border-radius: 10px;
-    height: 40px;
+    height: 50px;
     border: 1px solid white;
+    font-size: 18px;
     background-color: rgba($color: white, $alpha: .2);
     color: white;
     padding-left: 10px;
@@ -29,6 +30,7 @@ form {
   button{
     margin: 20px;
     width: 200px;
+    height: 40px;
     align-self: center;
     font-size: 18px;
     border-radius: 10px;
@@ -37,7 +39,7 @@ form {
   }
 
   .title{
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 700;
   }
 }
