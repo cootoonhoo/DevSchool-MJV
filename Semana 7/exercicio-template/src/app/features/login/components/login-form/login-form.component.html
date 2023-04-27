@@ -1,0 +1,12 @@
+<form [formGroup]="loginForm">
+  <p class="title">
+    Entrar
+  </p>
+  <hr>
+  <label>Usuário</label>
+  <input id="User" type="text" formControlName="user" placeholder="Digite seu usuario">
+  <label>Senha</label>
+  <input id="Password" type="password" formControlName="password" placeholder="Digite sua senha">
+  <p class="error" *ngIf="hasUserFailedAuthentication">Usuário ou senha inválidos</p>
+  <button type="submit" (click)="authenticate()">Entrar</button>
+</form>
