@@ -1,0 +1,41 @@
+footer{
+  width: 100%;
+  background-color: white;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  .localidade{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img{
+    width: 200px;
+    filter: invert(100%);
+  }
+
+  .contato{
+    flex-direction: column;
+  }
+
+  .localidade, .contato{
+    margin: 15px;
+    display: flex;
+
+    hr{
+      width: 100%;
+    }
+
+    span{
+      font-weight: 700;
+      font-size: 18px;
+      justify-content: flex-start;
+    }
+  }
+}

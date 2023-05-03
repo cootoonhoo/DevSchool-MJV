@@ -1,0 +1,57 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba($color: white, $alpha: .2);
+  border: 1px white solid;
+  border-radius: 10px;
+  color: white;
+  padding: 40px;
+
+  hr {
+    width: 100%;
+  }
+
+  label{
+    margin: 15px 0px 5px 0px;
+    font-size: 24px;
+  }
+
+  input{
+    border-radius: 10px;
+    height: 50px;
+    border: 1px solid white;
+    font-size: 18px;
+    background-color: rgba($color: white, $alpha: .2);
+    color: white;
+    padding-left: 10px;
+    outline: none;
+  }
+
+  button{
+    margin: 20px;
+    width: 200px;
+    height: 40px;
+    align-self: center;
+    font-size: 18px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba($color: white, $alpha: .4);
+    border: 1px solid white;
+  }
+
+  .title{
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+
+.error{
+  color: red;
+  font-size: 14px;
+}
+
+
+::placeholder {
+  color: rgba($color: white, $alpha: .5);
+}

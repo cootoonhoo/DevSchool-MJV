@@ -1,0 +1,51 @@
+header{
+  width: 100%;
+  height: auto;
+  color:  white;
+
+  .container{
+    height: 6rem;
+    margin: 2rem;
+
+    background-color: rgba($color: white, $alpha: .20);
+    border-radius: 10px;
+    border: 1.5px white solid;
+
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .links{
+      ul{
+        display: flex;
+
+        hr{
+          width: 1px;
+          height: 2rem;
+        }
+
+        li{
+          list-style-type: none;
+          align-self: center;
+          padding: 5px 10px;
+          &:hover{
+            background-color: rgba($color: white, $alpha: .20);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .logo{
+      img{
+        width: 175px;
+        align-self: center;
+        justify-self: center;
+      }
+    }
+
+    .logo, .links{
+      margin: 15px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div class="container">
+  <form [formGroup]="signUpForm">
+    <h1>Cadastro de usuário!</h1>
+    <hr>
+    <div class="form-field">
+      <label class="form-label">Nome</label>
+      <input type="text" formControlName="name" placeholder="Digite seu nome">
+    </div>
+    <div class="form-field">
+      <label class="form-label">Email</label>
+      <input type="email" formControlName="email" placeholder="Digite seu email">
+      <div class="error" *ngIf=" signUpForm.controls['email'].errors != null && signUpForm.controls['email'].errors!['email']">
+        Email inválido!
+      </div>
+    </div>
+    <div class="form-field">
+      <label class="form-label">Usuário</label>
+      <input type="text" formControlName="username" placeholder="Digite seu usuario">
+    </div>
+    <div class="form-field">
+      <label class="form-label">Senha</label>
+      <input type="password" formControlName="password" placeholder="Digite sua senha">
+      <div class="error" *ngIf=" signUpForm.controls['password'].errors != null && signUpForm.controls['password'].errors!['minlength']">
+        A senha deve ter pelo menos 8 caracteres!
+      </div>
+    </div>
+    <div class="form-button">
+      <button [disabled]="signUpForm.invalid" (click)="onSubmit()">Cadastrar</button>
+      <!-- <button  (click)="onSubmit()">Cadastrar</button> -->
+    </div>
+  </form>
+</div>
+<app-footer></app-footer>
